@@ -11,14 +11,19 @@ using System.Windows.Shapes;
 
 namespace CookiesPr
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private int cookiecount = 0; /// First number of cookies
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+       private void CookieDisplay_Click (object sender, RoutedEventArgs e)
+        {
+            /// this event is triggered when the button is clicked 
+            cookiecount ++;
+            CookieMeter.Text = cookiecount.ToString(); 
         }
     }
 }

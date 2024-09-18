@@ -18,25 +18,12 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
-        <StackPanel>
-            
-            <Label 
-           Grid.Row="1"
-           Grid.Column="1"
-           Content="Hello world"
-           VerticalAlignment="Bottom"
-           HorizontalAlignment="Center"
-              />
 
-            <Button
-                x:Name="CookieClicker"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center"
-                Content="Press"
-                Click="Cookie"
-                
-                />
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <TextBlock x:Name="CookieMeter"  Text="Count Cookies" FontSize="25" HorizontalAlignment="Center"  />
+            <Button x:Name="CookieDispaly" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Press" Click="CookieDisplay_Click" FontSize="23"/>
+            
         </StackPanel>
 
 
