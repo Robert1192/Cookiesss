@@ -26,7 +26,7 @@ namespace CookiesPr
             CookieMeter.Text = cookiecount.ToString();
         }
 
-      // test
+      // test2222
 
         private void SettingsIcon_Click(object sender, RoutedEventArgs e)
         {
