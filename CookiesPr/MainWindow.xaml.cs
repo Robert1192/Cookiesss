@@ -19,11 +19,18 @@ namespace CookiesPr
         {
             InitializeComponent();
         }
-       private void CookieDisplay_Click (object sender, RoutedEventArgs e)
+        private void CookieDisplay_Click(object sender, RoutedEventArgs e)
         {
             /// this event is triggered when the button is clicked 
-            cookiecount ++;
-            CookieMeter.Text = cookiecount.ToString(); 
+            cookiecount++;
+            CookieMeter.Text = cookiecount.ToString();
+        }
+
+      
+
+        private void SettingsIcon_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Language=English  Music=On Audio=On");
         }
     }
 }

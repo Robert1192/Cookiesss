@@ -21,12 +21,28 @@
 
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
 
+            
             <TextBlock x:Name="CookieMeter"  Text="Count Cookies" FontSize="25" HorizontalAlignment="Center"  />
+            <Separator Margin="10"></Separator>
             <Button x:Name="CookieDispaly" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Press" Click="CookieDisplay_Click" FontSize="23"/>
             
         </StackPanel>
 
 
+        <StackPanel Grid.Row="1" Grid.Column="0">
+
+            <Label x:Name="EventTitle" Content="Events" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+            <TextBlock Text="Cookies Burner = -25% Cookies" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Center" />
+            <Separator Margin="10"/>
+            <TextBlock Text="Cookies Overload = +25% Cookies" FontSize="15" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+        </StackPanel>
+
+        <StackPanel x:Name="Settingsbar" Grid.Row="0" Grid.Column="0" >
+            <Button x:Name="SettingsIcon" Click="SettingsIcon_Click" HorizontalAlignment="Left">
+                <Image Source="C:\Users\Robert\Documents\ForCc\Cookiesss\CookiesPr\Assets\SettingsIcon1.png" Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center"  />
+            </Button>
+        </StackPanel>
+        
 
 
     </Grid>
