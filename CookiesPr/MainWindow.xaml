@@ -49,5 +49,7 @@
             <Button x:Name="UpgradeAutoClick" Content="AutoClick" Click="UpgradeAutoClick_Click" FontSize="20" />
         </StackPanel>
         
+        
+        
     </Grid>
 </Window>
