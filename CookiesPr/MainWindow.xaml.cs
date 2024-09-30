@@ -42,12 +42,12 @@ namespace CookiesPr
             {
                 cookies -= upgradeCost; // Deduct the cost
                 cookiesPerClick++; // Increase clicking power by 1
-                upgradeCost += 5; // Increase the cost for the next upgrade
+                upgradeCost *= 2; // Increase the cost for the next upgrade
                 UpgradePowerClick.Content = $"ClickPower ({upgradeCost})";
                 UpdateCookieMeter(); // Update the UI display
             }
             else
-            {
+            {           
                 MessageBox.Show("Not enough cookies to upgrade!"); // Notify the player
             }
         }
