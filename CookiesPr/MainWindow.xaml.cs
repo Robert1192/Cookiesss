@@ -34,24 +34,26 @@ namespace CookiesPr
     {
         cookies += cookiesPerClick; // Increase cookies by the current click power
         UpdateCookieMeter(); // Update the UI display
-    }
-
-    private void UpgradePowerClick_Click(object sender, RoutedEventArgs e)
-    {
-        if (cookies >= upgradeCost) // Check if the player has enough cookies
-        {
-            cookies -= upgradeCost; // Deduct the cost
-            cookiesPerClick++; // Increase clicking power by 1
-            upgradeCost += 5; // Increase the cost for the next upgrade
-            UpdateCookieMeter(); // Update the UI display
         }
-        else
-        {
-            MessageBox.Show("Not enough cookies to upgrade!"); // Notify the player
-        }
-    }
 
-    private void UpgradeAutoClick_Click(object sender, RoutedEventArgs e)
+        private void UpgradePowerClick_Click(object sender, RoutedEventArgs e)
+        {
+            if (cookies >= upgradeCost) // Check if the player has enough cookies
+            {
+                cookies -= upgradeCost; // Deduct the cost
+                cookiesPerClick++; // Increase clicking power by 1
+                upgradeCost += 5; // Increase the cost for the next upgrade
+                UpgradePowerClick.Content = $"ClickPower ({upgradeCost})";
+                UpdateCookieMeter(); // Update the UI display
+            }
+            else
+            {
+                MessageBox.Show("Not enough cookies to upgrade!"); // Notify the player
+            }
+        }
+
+
+        private void UpgradeAutoClick_Click(object sender, RoutedEventArgs e)
     {
         // Logic for auto click upgrade (if implemented)
         // You can add similar logic as UpgradePowerClick_Click for auto clicks
