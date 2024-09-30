@@ -22,7 +22,7 @@
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
 
             
-            <TextBlock x:Name="CookieMeter"  Text="Count Cookies" FontSize="25" HorizontalAlignment="Center"  />
+            <TextBlock x:Name="CookieMeter"  Text="Count Cookies" FontSize="15" HorizontalAlignment="Center"  />
             <Separator Margin="10"></Separator>
             <Button x:Name="CookieDispaly" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Press" Click="CookieDisplay_Click" FontSize="23"/>
             
@@ -44,10 +44,10 @@
         </StackPanel>
 
         <StackPanel x:Name="UpgradeTypes" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="UpgradePowerClick" Content="ClickPower"  Click="UpgradePowerClick_Click" FontSize="20" />
+            <Button x:Name="UpgradePowerClick" Content="ClickPower ($10)"  Click="UpgradePowerClick_Click" FontSize="20" />
             <Separator Margin="10"/>
             <Button x:Name="UpgradeAutoClick" Content="AutoClick" Click="UpgradeAutoClick_Click" FontSize="20" />
         </StackPanel>
-        <StackPanel></StackPanel>
+        
     </Grid>
 </Window>

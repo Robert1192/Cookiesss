@@ -13,56 +13,53 @@ using System.Windows.Shapes;
 namespace CookiesPr
 {
     public partial class MainWindow : Window
+{
+    private int cookies = 0; // Track the number of cookies
+    private int cookiesPerClick = 1; // Cookies earned per click
+    private int upgradeCost = 10; // Cost of each upgrade
+
+    public MainWindow()
     {
-        private int cookiecount = 0; /// First number of cookies
-        private int cookiePerClick = 1; /// Number of Cookies that get added
-        private int UpgradeCost = 10; //Price of Upgrade
+        InitializeComponent();
+        UpdateCookieMeter();
+    }
 
-        public MainWindow()
-        {
-            InitializeComponent();
-            UpdateCookieMeter();
-        }
-        private void CookieDisplay_Click(object sender, RoutedEventArgs e)
-        {
-            /// this event is triggered when the button is clicked 
-            cookiecount++;
-            CookieMeter.Text = cookiecount.ToString();
-        }
+    // Method to update the cookie meter display
+    private void UpdateCookieMeter()
+    {
+        CookieMeter.Text = $"Cookies: {cookies} (Click Power: {cookiesPerClick})";
+    }
 
-        private void UpdateCookieMeter()
-        {
+    private void CookieDisplay_Click(object sender, RoutedEventArgs e)
+    {
+        cookies += cookiesPerClick; // Increase cookies by the current click power
+        UpdateCookieMeter(); // Update the UI display
+    }
 
-            CookieMeter.Text = $"Cookies: {cookiecount} (Click Power : {cookiePerClick}";
-
-        }
-        private void CookieDisplayCLick(object sender, RoutedEventArgs e)
+    private void UpgradePowerClick_Click(object sender, RoutedEventArgs e)
+    {
+        if (cookies >= upgradeCost) // Check if the player has enough cookies
         {
-            cookiecount += cookiePerClick; // increse cookies by the current power
+            cookies -= upgradeCost; // Deduct the cost
+            cookiesPerClick++; // Increase clicking power by 1
+            upgradeCost += 5; // Increase the cost for the next upgrade
             UpdateCookieMeter(); // Update the UI display
-
         }
-
-        private void UpgradePowerClick_CLick(object sender, RoutedEventArgs e)
+        else
         {
-            if (cookiecount >= UpgradeCost) //Check if the plaer has enough cookies
-            {
-                cookiecount -= UpgradeCost; // Take the cookies
-                cookiePerClick++;
-                UpgradeCost += 20; // Increase the upgrade cost
-                UpdateCookieMeter(); // Update the UI
-            }
-            else
-            {
-                MessageBox.Show("Not enough cookies");
-            }
-
-        }
-
-
-        private void SettingsIcon_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Language=English  Music=On Audio=On");
+            MessageBox.Show("Not enough cookies to upgrade!"); // Notify the player
         }
     }
+
+    private void UpgradeAutoClick_Click(object sender, RoutedEventArgs e)
+    {
+        // Logic for auto click upgrade (if implemented)
+        // You can add similar logic as UpgradePowerClick_Click for auto clicks
+    }
+
+    private void SettingsIcon_Click(object sender, RoutedEventArgs e)
+    {
+        // Logic for settings icon click (if implemented)
+    }
+}
 }
