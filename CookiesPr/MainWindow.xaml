@@ -44,9 +44,9 @@
         </StackPanel>
 
         <StackPanel x:Name="UpgradeTypes" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="UpgradePowerClick" Content="ClickPower"  Click="UpgradePowerClick_Click" />
+            <Button x:Name="UpgradePowerClick" Content="ClickPower"  Click="UpgradePowerClick_Click" FontSize="20" />
             <Separator Margin="10"/>
-            <Button x:Name="UpgradeAutoClick" Content="AutoClick" Click="UpgradeAutoClick_Click" />
+            <Button x:Name="UpgradeAutoClick" Content="AutoClick" Click="UpgradeAutoClick_Click" FontSize="20" />
         </StackPanel>
 
 
