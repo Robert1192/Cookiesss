@@ -42,7 +42,12 @@
                 <Image Source="C:\Users\Robert\Documents\ForCc\Cookiesss\CookiesPr\Assets\SettingsIcon1.png" Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center"  />
             </Button>
         </StackPanel>
-        
+
+        <StackPanel>
+            <Label
+                Content='Hello'
+                />
+        </StackPanel>
 
 
     </Grid>
