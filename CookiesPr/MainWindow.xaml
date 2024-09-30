@@ -43,10 +43,10 @@
             </Button>
         </StackPanel>
 
-        <StackPanel>
-            <Label
-                Content='Hello'
-                />
+        <StackPanel x:Name="UpgradeTypes" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="UpgradePowerClick" Content="ClickPower"  Click="UpgradePowerClick_Click" />
+            <Separator Margin="10"/>
+            <Button x:Name="UpgradeAutoClick" Content="AutoClick" Click="UpgradeAutoClick_Click" />
         </StackPanel>
 
 
