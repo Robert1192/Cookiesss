@@ -48,7 +48,6 @@
             <Separator Margin="10"/>
             <Button x:Name="UpgradeAutoClick" Content="AutoClick" Click="UpgradeAutoClick_Click" FontSize="20" />
         </StackPanel>
-
-
+        <StackPanel></StackPanel>
     </Grid>
 </Window>
