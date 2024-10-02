@@ -25,7 +25,7 @@
             <TextBlock x:Name="CookieMeter"  Text="Count Cookies" FontSize="15" HorizontalAlignment="Center" FontWeight="Black"  />
             <Separator Margin="10"></Separator>
             <Button x:Name="CookieDispaly" VerticalAlignment="Top" HorizontalAlignment="Center" Click="CookieDisplay_Click" FontSize="23">
-                <Image Source="C:\Users\Guaba\OneDrive\Skrivebord\Projects'\Cookiesss\CookiesPr\Assets\Cookie.PNG" Height="50" Width="50
+                <Image Source="C:\Users\Robert\Documents\ForCc\Cookiesss\CookiesPr\Assets\Cookie.PNG" Height="50" Width="50
                        "/>
             </Button>
 
