@@ -160,5 +160,6 @@ namespace CookiesPr
         {
             // Logic for settings icon click (if implemented)
         }
+
     }
 }
