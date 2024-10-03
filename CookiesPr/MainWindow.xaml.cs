@@ -160,5 +160,10 @@ namespace CookiesPr
         {
             // Logic for settings icon click (if implemented)
         }
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            cookies = 0; // Reset the numbber of Cookies to 0
+            UpdateCookieMeter(); //Update the UI display to reflect the reset
+        }
     }
 }
