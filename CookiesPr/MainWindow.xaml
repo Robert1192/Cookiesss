@@ -29,36 +29,55 @@
 
             <TextBlock x:Name="CookieMeter"  Text="Count Cookies" FontSize="15" HorizontalAlignment="Center" FontWeight="Black"  />
             <Separator Margin="10"></Separator>
-            <Button x:Name="CookieDispaly" VerticalAlignment="Top" HorizontalAlignment="Center" Click="CookieDisplay_Click" FontSize="23">
+            <Button x:Name="CookieDispaly" VerticalAlignment="Top" HorizontalAlignment="Center" Click="CookieDisplay_Click" FontSize="23" >
                 <Image Source="Assets\Cookie.PNG" Height="50" Width="50                       "/>
             </Button>
-
+            
         </StackPanel>
 
 
         <StackPanel Grid.Row="1" Grid.Column="0">
 
             <Label x:Name="EventTitle" Content="Events" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Black" />
-            <Button x:Name="BurnCookiesButton" Content="Burn Cookies (-25%)" Click="BurnCookies_Click" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Center" />
+            <Button x:Name="BurnCookiesButton" Content="Burn Cookies (-25%)" Click="BurnCookies_Click" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Center" >
+                <Button.Background>
+                    <ImageBrush ImageSource="C:\Users\Robert\Documents\ForCc\Cookiesss\CookiesPr\Assets\CookieClickerBackGround.jfif"/>
+                </Button.Background>
+            </Button>
             <Separator Margin="10"/>
-            <Button x:Name="AddCookiesButton" Content="Overload Cookies (+25%)" Click="AddCookies_Click" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Center" />
+            <Button x:Name="AddCookiesButton" Content="Overload Cookies (+25%)" Click="AddCookies_Click" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush ImageSource="C:\Users\Robert\Documents\ForCc\Cookiesss\CookiesPr\Assets\CookieClickerBackGround.jfif"/>
+                </Button.Background>
+            </Button>
         </StackPanel>
 
         <StackPanel x:Name="Settingsbar" Grid.Row="0" Grid.Column="0" >
             <Button x:Name="SettingsIcon" Click="SettingsIcon_Click" HorizontalAlignment="Left">
-                <Image Source="Assets\SettingsIcon1.png" Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.551,0.374"  />
+              <Image Source="Assets\SettingsIcon1.png" Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.551,0.374"  />                
             </Button>
         </StackPanel>
 
         <StackPanel x:Name="UpgradeTypes" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="UpgradePowerClick" Content="ClickPower ($10)"  Click="UpgradePowerClick_Click" FontSize="20" FontWeight="Black"/>
+            <Button x:Name="UpgradePowerClick" Content="ClickPower ($10)"  Click="UpgradePowerClick_Click" FontSize="20" FontWeight="Black">
+                <Button.Background>
+                    <ImageBrush  ImageSource="C:\Users\Robert\Documents\ForCc\Cookiesss\CookiesPr\Assets\CookieClickerBackGround.jfif"/>    
+                </Button.Background>
+            </Button>
             <Separator Margin="10"/>
-            <Button x:Name="UpgradeAutoClick" Content="AutoClick ($100)" Click="UpgradeAutoClick_Click" FontSize="20"  FontWeight="Black"/>
+            <Button x:Name="UpgradeAutoClick" Content="AutoClick ($100)" Click="UpgradeAutoClick_Click" FontSize="20"  FontWeight="Black">
+                <Button.Background>
+                    <ImageBrush ImageSource="C:\Users\Robert\Documents\ForCc\Cookiesss\CookiesPr\Assets\CookieClickerBackGround.jfif"/>
+                </Button.Background>
+            </Button>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="ResetButton" Content="Reset" Click="ResetButton_Click" FontSize="25" FontWeight="Black"/>
-
+            <Button x:Name="ResetButton" Content="Reset" Click="ResetButton_Click" FontSize="25" FontWeight="Black">
+                <Button.Background>
+                    <ImageBrush ImageSource="C:\Users\Robert\Documents\ForCc\Cookiesss\CookiesPr\Assets\CookieClickerBackGround.jfif"/>
+                </Button.Background>
+            </Button>
         </StackPanel>
 
 
