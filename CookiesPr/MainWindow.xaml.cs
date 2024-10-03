@@ -158,7 +158,7 @@ namespace CookiesPr
 
         private void SettingsIcon_Click(object sender, RoutedEventArgs e)
         {
-            // Logic for settings icon click (if implemented)
+            MessageBox.Show("Language: English , Sound: On, Music: On");
         }
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
