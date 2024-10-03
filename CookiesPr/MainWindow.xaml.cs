@@ -110,6 +110,11 @@ namespace CookiesPr
         {
             // Logic for settings icon click (if implemented)
         }
+
+        private void UpgradeAutoClickSpeed_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
 
