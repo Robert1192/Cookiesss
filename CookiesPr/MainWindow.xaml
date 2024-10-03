@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush Stretch="UniformToFill" ImageSource="C:\Users\Guaba\OneDrive\Skrivebord\Projects'\Cookiesss\CookiesPr\Assets\CookieClickerBackGround.jfif" />
+            <ImageBrush Stretch="UniformToFill" ImageSource="C:\Users\Robert\Documents\ForCc\Cookiesss\CookiesPr\Assets\CookieClickerBackGround.jfif" />
         </Grid.Background>
 
         <Grid.ColumnDefinitions>
