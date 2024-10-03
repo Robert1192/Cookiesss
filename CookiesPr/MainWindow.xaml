@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Guaba\OneDrive\Skrivebord\Projects'\Cookiesss\CookiesPr\Assets\CookieClickerBackGround.jfif" />
+            <ImageBrush ImageSource="C:\Users\Robert\Documents\ForCc\Cookiesss\CookiesPr\Assets\CookieClickerBackGround.jfif" />
         </Grid.Background>
 
         <Grid.ColumnDefinitions>
@@ -39,9 +39,9 @@
         <StackPanel Grid.Row="1" Grid.Column="0">
 
             <Label x:Name="EventTitle" Content="Events" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Black" />
-            <TextBlock Text="Cookies Burner = -25% Cookies" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Center" />
+            <Button x:Name="BurnCookiesButton" Content="Burn Cookies (-25%)" Click="BurnCookies_Click" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Center" />
             <Separator Margin="10"/>
-            <TextBlock Text="Cookies Overload = +25% Cookies" FontSize="15" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+            <Button x:Name="AddCookiesButton" Content="Overload Cookies (+25%)" Click="AddCookies_Click" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Center" />
         </StackPanel>
 
         <StackPanel x:Name="Settingsbar" Grid.Row="0" Grid.Column="0" >
@@ -56,7 +56,7 @@
             <Button x:Name="UpgradeAutoClick" Content="AutoClick ($100)" Click="UpgradeAutoClick_Click" FontSize="20"  FontWeight="Black"/>
         </StackPanel>
                  
-        <StackPanel
+    
         
     </Grid>
 </Window>
